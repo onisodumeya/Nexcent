@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
     color: #4D4D4D;
 }
 
@@ -8,8 +9,8 @@
 }
 
 .h-padding{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 140px;
+    padding-right: 140px;
 }
 
 .d-flex{
@@ -23,6 +24,10 @@
 body{
     background-color: white;
     font-family: Inter, sans-serif;
+}
+
+.background-dark{
+    background: #F5F7FA;
 }
 
 .above-the-fold{
@@ -56,9 +61,18 @@ h3{
     font-size: 28px;
 }
 
+h4{
+    font-size: 20px;
+    color: #4CAF4F;
+}
+
 a{
+    display: flex;
+    gap: 8px;
+    align-items: center;
     text-decoration: none;
     color: #4D4D4D;
+    height: fit-content;
 }
 
 li{
@@ -69,6 +83,10 @@ li{
     display: flex;
     gap: 40px;
     font-size: 16px;
+}
+
+section{
+    margin-bottom: 40px;
 }
 
 .sec-btn{
@@ -83,6 +101,7 @@ li{
 
 .pri-btn{
     display: flex;
+    align-items: center;
     gap: 8px;
     padding: 10px 20px;
     color: white;
@@ -92,7 +111,7 @@ li{
 }
 
 #hero{
-    height: 80%;
+    height: 75%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -180,8 +199,77 @@ main .pri-btn{
 }
 
 .article{
-    width: 90%;
+    width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
     justify-content: space-between;
+    align-items: center;
+}
+
+.article span {
+    color: #4CAF4F;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.grid-item{
+    display: flex;
+    gap: 10px;
+}
+
+.grid-wrapper img {
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.blogs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+.cta{
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+footer{
+    background-color: #263238;
+    padding: 60px;
+}
+
+footer li{
+    margin-bottom: 10px;
+}
+
+footer a{
+    color: #cbcbcb;
+}
+
+footer h4{
+    font-weight: 500;
+}
+
+input{
+    border: none;
+    padding: 10px 10px;
+    width: 250px;
+    border-radius: 10px;
+    background: rgba(225, 225, 225, 0.2);
 }
