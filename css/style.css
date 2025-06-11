@@ -38,7 +38,7 @@ body{
     align-items: center;
 }
 
-.desktop-nav{
+.nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -79,7 +79,7 @@ li{
     list-style-type: none;
 }
 
-.desktop-nav ul{
+.nav ul{
     display: flex;
     gap: 40px;
     font-size: 16px;
@@ -111,12 +111,17 @@ section{
 }
 
 #hero{
-    height: 75%;
+    height: fit-content;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 80px;
     justify-content: space-between;
     gap: 100px;
     
+}
+
+#hero img{
+    width: 30%;
 }
 
 #heroText{
@@ -272,4 +277,14 @@ input{
     width: 250px;
     border-radius: 10px;
     background: rgba(225, 225, 225, 0.2);
+}
+
+@media(min-width: 1150px) {
+    .mobile-nav{
+        display: none;
+    }
+
+    .mobile-header{
+        display: none;
+    }
 }

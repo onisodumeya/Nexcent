@@ -7,16 +7,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet-mediaquery.css">
+    <link rel="stylesheet" href="./css/mobile-mediaquery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Nexcent</title>
 </head>
 <body>
     <section class="above-the-fold">
         
-        <header class="h-padding desktop-nav">
+        <header class="h-padding nav desktop-nav">
             <a href="#"><img src="./icons/logo-black.svg" alt="Nexcent logo"></a>
 
-            <nav>
+            <nav class="nav-links">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Services</a></li>
@@ -27,7 +29,29 @@
                 </ul>
             </nav>
 
-            <div style="display: flex; gap: 20px;">
+            <div class="nav-btn" style="display: flex; gap: 20px;">
+                <button class="sec-btn">Login</button>
+                <button class="pri-btn">Sign up</button>
+            </div>
+        </header>
+        
+        <header class="h-padding nav mobile-nav">
+            <a href="#"><img src="./icons/logo-black.svg" alt="Nexcent logo"></a>
+            <i class="fa-solid fa-bars" style="font-size: 24px;"></i>
+        </header>
+
+        <header class="mobile-header h-padding">
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-btn">
                 <button class="sec-btn">Login</button>
                 <button class="pri-btn">Sign up</button>
             </div>
@@ -39,7 +63,7 @@
                 <p>Where to grow your business as a photographer: site or social media?</p>
                 <button class="pri-btn">Register</button>
             </div>
-            <img src="./images/hero-section-illustration.png" alt="" height="70%">
+            <img src="./images/hero-section-illustration.png" alt="">
         </section>
 
         <div style="display: flex; gap: 10px; width: fit-content;">
@@ -166,14 +190,14 @@
                 Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
                 <h4>Tim Smith</h4>
                 <p>British Dragon Boat Racing Association</p>
-                <div class="d-flex" style="width: 100%; gap: 30px; align-items: center;">
+                <div class="d-flex customers" style="width: 100%; gap: 30px; align-items: center;">
                     <img src="./icons/client-icon-one.svg" alt="" width="40px">
                     <img src="./icons/client-icon-two.svg" alt="" width="40px">
                     <img src="./icons/client-icon-three.svg" alt="" width="40px">
                     <img src="./icons/client-icon-four.svg" alt="" width="40px">
                     <img src="./icons/client-icon-five.svg" alt="" width="40px">
                     <img src="./icons/client-icon-six.svg" alt="" width="40px">
-                    <a href=""><h4>Meet all customers</h4> <i class="fa-solid fa-arrow-right" style="color: #4CAF4F;"></i></a>
+                    <a href="" class="meet-customers"><h4>Meet all customers</h4> <i class="fa-solid fa-arrow-right" style="color: #4CAF4F;"></i></a>
                 </div>
             </div>
         </section>
